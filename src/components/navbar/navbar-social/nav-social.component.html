@@ -1,0 +1,37 @@
+<div
+  class="navbar-social-component-container"
+  [class.navbar-social-component-container-dark-theme] = "themeColorDark"
+>
+  <a
+    class="navbar-social-component-item"
+    href="https://www.linkedin.com/in/mohammad-alhabash-76251223a/"
+    [class.navbar-social-component-item-dark-theme] = "themeColorDark"
+  >
+    <img *ngIf="themeColorDark" class="image" [ngSrc]="'assets/linkedin.svg'" width="30" height="25" alt="Linked In"/>
+    <img *ngIf="!themeColorDark" class="image" [ngSrc]="'assets/linkedin_black.svg'" width="30" height="25" alt="Linked In"/>
+  </a>
+  <a
+    class="navbar-social-component-item"
+    href="https://gitlab.com/MoAlhabash"
+    [class.navbar-social-component-item-dark-theme] = "themeColorDark"
+  >
+    <img *ngIf="themeColorDark" class="image" [ngSrc]="'assets/gitlab.svg'" width="35" height="35" alt="GitLab"/>
+    <img *ngIf="!themeColorDark" class="image" [ngSrc]="'assets/gitlab_black.svg'" width="35" height="35" alt="GitLab"/>
+  </a>
+  <a
+    class="navbar-social-component-item"
+    href="https://github.com/MoAlhabash"
+    [class.navbar-social-component-item-dark-theme] = "themeColorDark"
+  >
+    <img *ngIf="themeColorDark" class="image" [ngSrc]="'assets/github.svg'" width="35" height="35" alt="GitHub"/>
+    <img *ngIf="!themeColorDark" class="image" [ngSrc]="'assets/github_black.svg'" width="35" height="35" alt="GitHub"/>
+  </a>
+  <a
+    class="navbar-social-component-item"
+    href="mailto:mouhamad.alhabash@gmail.com"
+    [class.navbar-social-component-item-dark-theme] = "themeColorDark"
+  >
+    <img *ngIf="themeColorDark" class="image" [ngSrc]="'assets/email.svg'" width="35" height="35" alt="Email"/>
+    <img *ngIf="!themeColorDark" class="image" [ngSrc]="'assets/email_black.svg'" width="35" height="35" alt="Email"/>
+  </a>
+</div>

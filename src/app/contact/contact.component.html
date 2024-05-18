@@ -1,0 +1,15 @@
+<div
+  class="contact-component-container"
+  [class.contact-component-container-dark-theme]="themeDark"
+>
+  <div class="header-holder-contact"></div>
+  <div class="contact-component-text">
+    <text-section-component [header]="'Contact'" [text]="'Feel free to Contact me by submitting the form below and I will get back to you as soon as possible'" [textColor]="'gray'" [littleGap]="true"></text-section-component>
+  </div>
+  <div
+    class="contact-component-form-container"
+    [class.contact-component-form-container-dark-theme]="themeDark"
+  >
+    <form-component class="contact-component-form"></form-component>
+  </div>
+</div>

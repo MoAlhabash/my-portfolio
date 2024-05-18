@@ -1,0 +1,26 @@
+@import "src/style/colors";
+
+.btnHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 0.7rem 2rem;
+  transition: color 0.5s;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.btnHeader:hover {
+  cursor: pointer;
+}
+
+.btnHeader-light-theme:hover {
+  color: $color_yellow;
+}
+
+.btnHeader-dark-theme:hover {
+  color: $color_dark;
+}

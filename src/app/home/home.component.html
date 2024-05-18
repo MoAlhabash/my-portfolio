@@ -1,0 +1,8 @@
+<div
+  class="home-component-container"
+  [ngClass]="themeClass()">
+  <text-section-component [header]="sectionHeader" [text]="sectionText" class="home-component-text-section"></text-section-component>
+  <button-component [btnName]="'projects'" class="home-component-button" (click)="onClick()"></button-component>
+  <nav-social-component class="nav-social-home"></nav-social-component>
+</div>
+<footer-component></footer-component>

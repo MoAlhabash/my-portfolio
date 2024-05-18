@@ -1,0 +1,115 @@
+@import "src/style/colors";
+
+.nav-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  height: fit-content;
+  width: 100%;
+  padding: 1rem;
+}
+
+.nav-header-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3rem;
+}
+
+.nav-header-div {
+  display: flex;
+}
+
+.nav-header-container-light-theme {
+  background-color: #fff;
+  box-shadow: 0 1px 6px $color_yellow, 0 1px 4px $color_gray;
+}
+
+.nav-header-container-dark-theme {
+  background-color: $color_green_gray_header;
+  box-shadow: 0 1px 6px $color_green_gray, 0 1px 4px $color_white;
+  color: $color_white;
+}
+
+.toggle-button {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  margin-right: 2rem;
+}
+
+.toggle-button:hover {
+  cursor: pointer;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+@media screen  and (max-width: 850px){
+  .nav-header-container{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .nav-header-buttons {
+    display: none;
+    width: 100%;
+  }
+
+  .nav-header-div {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .active {
+    display: flex;
+  }
+
+  .nav-header-div > * {
+    width: 100%;
+    border-top: 1px solid $color_yellow ;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-header-div-dark-theme > * {
+    border-top: 1px solid $color_dark ;
+  }
+
+  .nav-header-div > *:hover {
+    cursor: pointer;
+    background-color: #dad7d7;
+    opacity: 70%;
+    color: $color-yellow;
+  }
+
+  .nav-header-div-dark-theme > *:hover {
+    color: #000000;
+  }
+
+  .nav-header-div:first-child {
+    margin-top: 0.5rem;
+  }
+
+  .padding-bottom {
+    padding-bottom: 0;
+  }
+}

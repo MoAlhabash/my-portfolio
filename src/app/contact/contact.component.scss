@@ -1,0 +1,47 @@
+@import "src/style/colors";
+
+.contact-component-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  background: linear-gradient(-45deg, $triangle-color ($triangle-size / 2), transparent 1%), $bg-color;
+  background-size: $triangle-size $triangle-size;
+  overflow: auto;
+}
+
+* {
+  height: fit-content;
+  width: 100%;
+}
+
+.header-holder-contact {
+  margin-bottom: 5rem;
+}
+
+.contact-component-form-container {
+  background-color: $color_white;
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 0.5rem 1rem $color-text-gray;
+  transition: ease all .5s;
+  margin-bottom: 3rem;
+}
+
+.contact-component-container-dark-theme {
+  background: linear-gradient(-45deg, $color_dark_triangle ($triangle-size / 2), transparent 1%), $color_dark;
+  background-size: $triangle-size $triangle-size;
+  color: $color_white;
+}
+
+.contact-component-form-container-dark-theme {
+  background-color: $color-form-bg;
+  box-shadow: 0 0.5rem 1rem $color-white;
+}
+
+@media screen and (max-width: 700px){
+  .contact-component-form-container {
+    width: 100%;
+  }
+}

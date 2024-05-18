@@ -1,0 +1,23 @@
+<div
+  class="project-component-container"
+  [class.project-component-container-dark-theme]="themeDark"
+>
+  <img
+    class="project-image"
+    [class.project-image-dark-theme]="themeDark"
+    [ngSrc]="image"
+    [width]="width"
+    [height]="height"
+    [alt]="altImage"
+  >
+  <div class="project-component-text-section">
+    <div class="text-section">
+      <ng-content></ng-content>
+    </div>
+    <div class="btn">
+      <a class="link" [href]="link">
+        <button-component [btnName]="btnName"></button-component>
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+@import "src/style/colors";
+
+.home-component-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100%;
+}
+
+.home-component-text-section {
+  height: fit-content;
+}
+
+.home-component-button {
+  height: fit-content;
+}
+
+.nav-social-home {
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-light-theme {
+  background: linear-gradient(-45deg, $triangle-color ($triangle-size / 2), transparent 1%), $bg-color;
+  background-size: $triangle-size $triangle-size;
+}
+
+.home-dark-theme {
+  background: linear-gradient(-45deg, $color_dark_triangle ($triangle-size / 2), transparent 1%), $color_dark;
+  background-size: $triangle-size $triangle-size;
+  color: $color_white;
+}

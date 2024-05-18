@@ -1,0 +1,96 @@
+@import "src/style/colors";
+
+.form-component-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 90%;
+  height: fit-content;
+}
+
+.form-component-container {
+  height: fit-content;
+}
+
+.form-control-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+}
+
+.display-flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.form-control-item-input {
+  background-color: $bg-text-input;
+  border: 1px solid $color_white;
+  border-radius: 10px;
+}
+
+.form-control-item-input-dark-theme {
+  background-color: rgb(112, 119, 112, 0.4);
+}
+
+.form-control-item-input-dark-theme::placeholder {
+  color: $color-white;
+}
+
+.form-control-item-single-line-input {
+  padding: 1.3rem 1rem;
+  font-size: 14px;
+  font-weight: 500;
+  height: fit-content;
+}
+
+.form-control-item-label {
+  margin-left: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  height: fit-content;
+}
+
+.form-control-item-multi-line-input {
+  padding: 1rem;
+  font-size: 14px;
+  height: fit-content;
+}
+
+.from-btn-submit {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+.form-control-item-name {
+  margin-top: 2rem;
+}
+
+.form-control-item-input:focus {
+  box-shadow: 0 0 20px $color_yellow;
+  background-color: $color_white;
+}
+
+.form-control-item-input-dark-theme:focus {
+  box-shadow: 0 0 20px $color_green_gray;
+  background-color: #232222;
+  color: $color_white;
+}
+
+.form-control-item-invalid {
+  border: 1px solid #f30909;
+}
+
+.error-message {
+  font-size: 14px;
+  font-weight: 200;
+  color: #f30909;
+}
+
+@media screen and (max-width: 450px){
+  .from-btn-submit {
+    overflow: hidden;
+  }
+}

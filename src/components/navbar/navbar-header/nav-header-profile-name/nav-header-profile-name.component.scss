@@ -1,0 +1,51 @@
+@import "src/style/colors";
+
+.nav-header-profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  transition: color 0.5s;
+  margin-left: 3rem;
+}
+
+.nav-header-profile-container:hover {
+  cursor: pointer;
+}
+
+.nav-header-profile-container-light-theme:hover {
+  color: $color_yellow;
+}
+
+.nav-header-profile-container-dark-theme:hover {
+  color: $color_dark;
+}
+
+
+.nav-header-profile-photo {
+  border-radius: 100px;
+}
+
+.nav-header-profile-photo-light-theme {
+  box-shadow: 0 1px 6px $color_yellow;
+}
+
+.nav-header-profile-photo-dark-theme {
+  box-shadow: 0 1px 6px $color_dark;
+}
+
+.nav-header-profile-name {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 450px) {
+  .nav-header-profile-container > *{
+    display: none;
+  }
+
+  .nav-header-profile-container {
+    height: 3.5rem;
+  }
+}

@@ -1,0 +1,85 @@
+<div
+  class="projects-component-container"
+  [class.projects-component-container-dark-theme]="themeDark">
+  <div class="header-holder-projects"></div>
+  <text-section-component
+    class="projects-component-text"
+    [text]="'Here you can find some of the personal projects that I created'"
+    [textColor]="'gray'"
+    [header]="'projects'">
+  </text-section-component>
+  <div class="projects-component-items">
+    <div class="projects-component-item">
+      <project-component
+        [image]="'assets/orbisu.png'"
+        [altImage]="'ORBIS-U'"
+        [width]="500"
+        [height]="500"
+        [btnName]="'Go to Dedalus Webpage'"
+        [link]="'https://www.dedalus.com/dach/de/perspectives/der-orbis-u-frame-wird-pilotiert/'"
+        class="projects-component-project-component"
+      >
+        <text-section-component
+          [header]="'ORBIS-U Dedalus healthcare'"
+          [text]="'Since march 2022 I work at Dedalus HealthCare GmbH in Germany on the ORBIS-U product.'"
+          [textColor]="'gray'"
+          [textAlignLeft]="true"
+        ></text-section-component>
+      </project-component>
+    </div>
+    <div class="projects-component-item">
+      <project-component
+        [image]="'assets/Todo.png'"
+        [altImage]="'ToDo-App'"
+        [width]="500"
+        [height]="500"
+        [btnName]="'Go to Project'"
+        [link]="'https://gitlab.com/angular9002518/todo-list'"
+        class="projects-component-project-component"
+      >
+        <text-section-component
+          [header]="'ToDo-App'"
+          [text]="'Here you can find about my first project that I made with Angular'"
+          [textColor]="'gray'"
+          [textAlignLeft]="true"
+        ></text-section-component>
+      </project-component>
+    </div>
+    <div class="projects-component-item">
+      <project-component
+        [image]="'assets/pong.png'"
+        [altImage]="'Pong'"
+        [width]="500"
+        [height]="500"
+        [btnName]="'Go to Project'"
+        [link]="'https://gitlab.com/angular9002518/pong'"
+        class="projects-component-project-component"
+      >
+        <text-section-component
+          [header]="'Ping-Pong'"
+          [text]="'Here you can find about a game called Ping-Pong I developed. The game uses Angular in the Frontend and Quarkus in the Backend'"
+          [textColor]="'gray'"
+          [textAlignLeft]="true"
+        ></text-section-component>
+      </project-component>
+    </div>
+    <div class="projects-component-item">
+      <project-component
+        [image]="'assets/portfolio.png'"
+        [altImage]="'my-portfolio'"
+        [width]="500"
+        [height]="500"
+        [btnName]="'Go to Project'"
+        [link]="'https://gitlab.com/angular9002518/my-portfolio'"
+        class="projects-component-project-component"
+      >
+        <text-section-component
+          [header]="'My Portfolio'"
+          [text]="'Here you can find about the source code of this portfolio. I used Angular for the frontend with SASS for the styling.'"
+          [textColor]="'gray'"
+          [textAlignLeft]="true"
+        ></text-section-component>
+      </project-component>
+    </div>
+  </div>
+</div>

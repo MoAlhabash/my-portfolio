@@ -1,0 +1,12 @@
+<div class="nav-header-profile-container"
+     [ngClass]="profileHeaderTheme()"
+     (click)="onClick()">
+  <img
+    [ngSrc]="photoNameSrc"
+    width="50"
+    height="50"
+    class="nav-header-profile-photo"
+    [ngClass]="imageColorTheme()"
+  />
+  <div class="nav-header-profile-name">{{personName}}</div>
+</div>

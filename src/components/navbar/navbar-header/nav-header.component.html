@@ -1,0 +1,26 @@
+<div
+  class="nav-header-container"
+  [ngClass]="headerContainerTheme()"
+  [class.padding-bottom]="active"
+>
+  <nav-header-profile-name-component></nav-header-profile-name-component>
+  <div
+    class="nav-header-buttons"
+    [class.active]="active"
+  >
+    <div
+      class="nav-header-div"
+      [class.nav-header-div-dark-theme]="darkTheme"
+    >
+      <nav-header-item-component (click)="onClick('contact')" [btnText]="'Contact'"></nav-header-item-component>
+      <nav-header-item-component (click)="onClick('projects')" [btnText]="'Projects'"></nav-header-item-component>
+      <nav-header-item-component (click)="onClick('about')" [btnText]="'about'"></nav-header-item-component>
+      <nav-header-item-component (click)="onClick('home')" [btnText]="'home'"></nav-header-item-component>
+    </div>
+  </div>
+  <div class="toggle-button" (click)="isActive()">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+</div>

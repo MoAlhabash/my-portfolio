@@ -1,0 +1,46 @@
+<div class="form-component-container display-flex-center">
+  <form [formGroup]="contactForm" class="form-component-form" (ngSubmit)="submitForm(contactForm.value)">
+    <div class="form-control-item form-control-item-name">
+      <label for="name" class="form-control-item-label">Name: </label>
+      <input
+        class="form-control-item-input form-control-item-single-line-input"
+        placeholder="Your name"
+        id="name"
+        type="text"
+        formControlName="name"
+        [class.form-control-item-input-dark-theme]="themeDark"
+        [class.form-control-item-invalid]="nameInvalid && isNameInvalid"
+      >
+      <p *ngIf="nameInvalid && isNameInvalid" class="error-message">*Your name is required</p>
+    </div>
+    <div class="form-control-item">
+      <label for="email" class="form-control-item-label">Email: </label>
+      <input
+        class="form-control-item-input form-control-item-single-line-input"
+        placeholder="Your Email"
+        id="email" type="email"
+        formControlName="email"
+        [class.form-control-item-input-dark-theme]="themeDark"
+        [class.form-control-item-invalid]="emailInvalid && isEmailInvalid"
+      >
+      <p *ngIf="emailInvalid && isEmailInvalid" class="error-message">*Your email is required</p>
+    </div>
+    <div class="form-control-item">
+      <label for="message" class="form-control-item-label">Your Message: </label>
+      <textarea
+        class="form-control-item-input form-control-item-multi-line-input"
+        id="message"
+        type="text"
+        placeholder="Your Message"
+        formControlName="message"
+        rows="6"
+        [class.form-control-item-input-dark-theme]="themeDark"
+        [class.form-control-item-invalid]="messageInvalid && isMessageInvalid"
+      ></textarea>
+      <p *ngIf="messageInvalid && isMessageInvalid" class="error-message">*Your message is required</p>
+    </div>
+    <div class="from-btn-submit">
+      <button-component class="btn-submit" [btnName]="'Submit'"></button-component>
+    </div>
+  </form>
+</div>

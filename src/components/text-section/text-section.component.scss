@@ -1,0 +1,44 @@
+@import "src/style/colors";
+
+.text-section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.text-section-header {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 600;
+  height: fit-content;
+  font-size: 36px;
+  word-wrap: break-word;
+  text-align: center;
+  width: 80%;
+}
+
+.text-section-text {
+  font-size: 24px;
+  height: fit-content;
+  display: block;
+  text-align: center;
+  width: 80%;
+}
+
+.text-section-text-gray {
+  color: $color-text-gray;
+}
+
+.text-section-text-align-left {
+  text-align: left;
+  width: 100%;
+}
+
+.text-section-gap-little {
+  gap: 0.5rem;
+}
+
+

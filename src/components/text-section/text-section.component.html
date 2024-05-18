@@ -1,0 +1,20 @@
+<div
+  class="text-section-container"
+     [class.text-section-gap-little]="littleGap"
+>
+  <div
+    class="text-section-header"
+    *ngIf="header"
+    [class.text-section-text-align-left]="textAlignLeft"
+  >
+    {{header}}
+  </div>
+  <div
+    *ngIf="text"
+    class="text-section-text"
+    [ngClass]="textColor === 'gray' && !themeDark ? 'text-section-text-gray' : ''"
+    [class.text-section-text-align-left]="textAlignLeft"
+  >
+    {{text}}
+  </div>
+</div>

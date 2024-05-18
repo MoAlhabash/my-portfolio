@@ -1,0 +1,28 @@
+<div
+  class="about-component-container"
+  [class.about-component-container-dark-theme]="themeDark"
+>
+  <div class="header-holder"></div>
+  <div class="about-me-skill-section">
+    <div class="about-me-section">
+      <text-section-component [header]="'About me'" [text]="aboutMeText" [textColor]="'gray'"></text-section-component>
+    </div>
+    <div class="get-to-know-skills-section">
+      <div class="get-to-know-me">
+        <text-section-component class="get-to-know-me-btn-text" [header]="'Get to know me'" [text]="knowMe" [textColor]="'gray'" [textAlignLeft]="true"></text-section-component>
+        <button-component class="get-to-know-me-btn-text" [btnName]="'Contact'" (click)="onClick()"></button-component>
+      </div>
+      <div class="skills-section">
+        <div class="skills-title">My Skills</div>
+        <div class="skills-items">
+          <div
+            class="skills-item"
+            [class.skills-item-dark-theme]="themeDark"
+            *ngFor ="let item of skills"
+            > {{item}} </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer-component class="footer-about"></footer-component>

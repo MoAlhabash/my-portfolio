@@ -1,0 +1,39 @@
+@import "src/style/colors";
+
+.projects-component-container {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 6rem;
+  background: linear-gradient(-45deg, $triangle-color ($triangle-size / 2), transparent 1%), $bg-color;
+  background-size: $triangle-size $triangle-size;
+}
+
+.header-holder-projects {
+  margin-bottom: 3rem;
+}
+
+.projects-component-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: fit-content;
+  gap: 6rem;
+}
+
+.projects-component-container-dark-theme {
+  background: linear-gradient(-45deg, $color_dark_triangle ($triangle-size / 2), transparent 1%), $color_dark;
+  background-size: $triangle-size $triangle-size;
+  color: $color_white;
+}
+
+.projects-component-text {
+  height: fit-content;
+  width: 80%;
+}
+
+.projects-component-project-component {
+  height: fit-content;
+}

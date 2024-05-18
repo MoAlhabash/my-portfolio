@@ -1,0 +1,34 @@
+@import "src/style/colors";
+
+.navbar-social-component-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: fit-content;
+  background-color: $triangle-color;
+  box-shadow: 0 0 18px $color_gray;
+}
+
+.navbar-social-component-item {
+  padding: 0.5rem;
+}
+
+.navbar-social-component-item:hover {
+  box-shadow: 0 0 10px $color_yellow;
+}
+
+.navbar-social-component-container-dark-theme{
+  background-color: $color_green_gray;
+  box-shadow: 0 0 18px $color_white;
+}
+
+.navbar-social-component-item-dark-theme:hover {
+  box-shadow: 0 0 10px $color_white;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-social-component-container {
+    display: none;
+  }
+}
